@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAFEGUARD AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="particles"></div>
+
+  <nav class="navbar">
+    <div class="logo">SAFEGUARD AI</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="history.html">History</a>
+      <a href="education.html">Education</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="ai-badge">AI MONITORING SYSTEM ACTIVE</div>
+      <h1>INTERACTIVE AI DISASTER PREDICTION SYSTEM</h1>
+      <p>Smart City AI platform untuk simulasi prediksi banjir, kebakaran, dan gempa bumi berbasis environmental
+        analysis.</p>
+      <div class="hero-buttons">
+        <a href="dashboard.html" class="btn">MULAI ANALISA</a>
+        <a href="education.html" class="btn-outline">EDUCATION CENTER</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="live-monitoring">
+    <div class="monitor-card">
+      <h3>Temperature</h3>
+      <p id="tempMonitor">32°C</p>
+    </div>
+    <div class="monitor-card">
+      <h3>Humidity</h3>
+      <p id="humidityMonitor">68%</p>
+    </div>
+    <div class="monitor-card">
+      <h3>Water Level</h3>
+      <p id="waterMonitor">42 CM</p>
+    </div>
+    <div class="monitor-card">
+      <h3>Earth Vibration</h3>
+      <p id="vibrationMonitor">LOW</p>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats-card">
+      <h2>24/7</h2>
+      <p>AI Monitoring</p>
+    </div>
+    <div class="stats-card">
+      <h2>99%</h2>
+      <p>Prediction Accuracy</p>
+    </div>
+    <div class="stats-card">
+      <h2>500+</h2>
+      <p>Daily Analysis</p>
+    </div>
+  </section>
+
+  <div class="clock" id="clock"></div>
+
+  <script src="js/app.js"></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const current = window.location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll('.nav-links a, .sidebar a').forEach(link => {
+        if (link.getAttribute('href') === current) link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
