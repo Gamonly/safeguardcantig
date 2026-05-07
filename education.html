@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="dashboard">
+    <div class="sidebar">
+      <h2>SAFEGUARD AI</h2>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="history.html">History</a>
+      <a href="education.html">Education</a>
+    </div>
+
+    <div class="main">
+      <div class="education-page">
+        <h1>AI DISASTER EDUCATION CENTER</h1>
+        <p style="text-align:center; color:#ccc; max-width:800px; margin:0 auto 40px;">
+          Pengetahuan dan panduan darurat untuk menghadapi bencana
+        </p>
+
+        <div class="education-grid">
+          <div class="education-card">
+            <h2>BANJIR</h2>
+            <ul>
+              <li>Matikan listrik dan gas saat air mulai naik</li>
+              <li>Simpan dokumen penting di tempat tinggi atau tas kedap air</li>
+              <li>Siapkan tas darurat (obat, makanan, senter, radio)</li>
+              <li>Ikuti jalur evakuasi yang sudah ditentukan</li>
+              <li>Jangan menyeberang arus air yang deras</li>
+            </ul>
+          </div>
+
+          <div class="education-card">
+            <h2>KEBAKARAN</h2>
+            <ul>
+              <li>Gunakan APAR (Alat Pemadam Api Ringan) dengan benar</li>
+              <li>Hindari korsleting listrik dan gunakan colokan yang aman</li>
+              <li>Hubungi pemadam kebakaran secepatnya (113)</li>
+              <li>Evakuasi dengan tenang, jangan gunakan lift</li>
+              <li>Stop, Drop, and Roll jika pakaian terbakar</li>
+            </ul>
+          </div>
+
+          <div class="education-card">
+            <h2>GEMPA BUMI</h2>
+            <ul>
+              <li>Berlindung di bawah meja atau tempat kokoh (Drop, Cover, Hold On)</li>
+              <li>Hindari kaca, jendela, dan benda berat yang bisa jatuh</li>
+              <li>Jangan gunakan lift</li>
+              <li>Setelah gempa reda, segera menuju area terbuka</li>
+              <li>Siapkan tas darurat dan rencana keluarga</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const current = window.location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll('.nav-links a, .sidebar a').forEach(link => {
+        if (link.getAttribute('href') === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
